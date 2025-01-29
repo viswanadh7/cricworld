@@ -7,10 +7,10 @@ const TopTabs = withLayoutContext(Navigator);
 
 const Matches = () => {
   return (
-    <TopTabs>
-      <TopTabs.Screen name="finished" />
-      <TopTabs.Screen name="index" />
-      <TopTabs.Screen name="upcomming" />
+    <TopTabs screenOptions={{ tabBarLabelStyle: { fontWeight: "bold" } }}>
+      <TopTabs.Screen name="finished" options={{ title: "Finished" }} />
+      <TopTabs.Screen name="index" options={{ title: "Live" }} />
+      <TopTabs.Screen name="upcomming" options={{ title: "Upcomming" }} />
     </TopTabs>
   );
 };

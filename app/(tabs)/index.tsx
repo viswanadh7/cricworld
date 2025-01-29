@@ -1,11 +1,8 @@
-import { Stack } from "expo-router";
+import React from "react";
+import { Text } from "react-native";
 
-const index = () => {
-  return (
-    <Stack>
-      <Stack.Screen name="(matches)" options={{ headerShown: false }} />
-    </Stack>
-  );
+const browse = () => {
+  return <Text>browse</Text>;
 };
 
-export default index;
+export default browse;
