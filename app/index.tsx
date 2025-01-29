@@ -1,4 +1,6 @@
 import { Text, View } from "react-native";
+import '../global.css';
+
 
 export default function Index() {
   return (
@@ -10,6 +12,7 @@ export default function Index() {
       }}
     >
       <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text className="text-blue-500 text-2xl">Tailwind CSS</Text>
     </View>
   );
 }
