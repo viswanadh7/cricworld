@@ -40,7 +40,7 @@ const TableComponent = ({
   }) => {
     return (
       <TouchableOpacity onPress={() => alert(`You clicked: ${value}`)}>
-        <Text>{value}</Text>
+        <Text className={`text-${textAlign}`}>{value}</Text>
       </TouchableOpacity>
     );
   };
