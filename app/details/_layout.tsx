@@ -5,13 +5,13 @@ const { Navigator } = createMaterialTopTabNavigator();
 
 const TopTabs = withLayoutContext(Navigator);
 
-const MatchesLayout = () => {
+const DetailsLayout = () => {
   return (
     <TopTabs initialRouteName="index" screenOptions={{ tabBarLabelStyle: { fontWeight: "bold" } }}>
-      <TopTabs.Screen name="finished" options={{ title: "Finished" }} />
+      <TopTabs.Screen name="info" options={{ title: "Info" }} />
       <TopTabs.Screen name="index" options={{ title: "Live" }} />
-      <TopTabs.Screen name="upcomming" options={{ title: "Upcomming" }} />
+      <TopTabs.Screen name="score" options={{ title: "Score" }} />
     </TopTabs>
   );
 };
-export default MatchesLayout;
+export default DetailsLayout;

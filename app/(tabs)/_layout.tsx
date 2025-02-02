@@ -3,7 +3,7 @@ import { Image } from "react-native";
 
 const TabLayout = () => {
   return (
-    <Tabs>
+    <Tabs initialRouteName="matches">
       <Tabs.Screen
         name="feed"
         options={{
