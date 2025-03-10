@@ -36,7 +36,7 @@ const score = () => {
     scoreCardDetails.scoreCard[inningsId].partnershipsData
   ).map((partnership) => [
     partnership.bat1Name,
-    partnership.totalRuns,
+    `${partnership.totalRuns} (${partnership.totalBalls})`,
     partnership.bat2Name,
   ]);
   return (
